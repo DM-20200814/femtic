@@ -1,8 +1,0 @@
-/home/dm/Desktop/femtic_cmake/femtic/build/CMakeFiles/edit_cache.dir
-/home/dm/Desktop/femtic_cmake/femtic/build/CMakeFiles/rebuild_cache.dir
-/home/dm/Desktop/femtic_cmake/femtic/build/femtic_lib/CMakeFiles/femtic_lib.dir
-/home/dm/Desktop/femtic_cmake/femtic/build/femtic_lib/CMakeFiles/edit_cache.dir
-/home/dm/Desktop/femtic_cmake/femtic/build/femtic_lib/CMakeFiles/rebuild_cache.dir
-/home/dm/Desktop/femtic_cmake/femtic/build/femtic_main/CMakeFiles/femtic.dir
-/home/dm/Desktop/femtic_cmake/femtic/build/femtic_main/CMakeFiles/edit_cache.dir
-/home/dm/Desktop/femtic_cmake/femtic/build/femtic_main/CMakeFiles/rebuild_cache.dir
