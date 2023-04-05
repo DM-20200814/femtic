@@ -1,3 +1,10 @@
+```
+cd /to/project/path
+cmake -B build
+cmake --build build --parallel n # specify n can compile faster
+```
+The executable program 'femtic' is in ./build/femtic_main
+
 # FEMTIC
 FEMTIC is a 3-D magnetotelluric inversion code based on the following studies. FEMTIC was made using object-oriented programming with C++. FEMTIC enables us to incorporate topography and bathymetry into an inversion model. FEMTIC is applicable to land magnetotelluric survey data as well as ocean bottom magnetotelluric survey data.
 
