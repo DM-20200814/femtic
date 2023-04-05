@@ -1100,9 +1100,7 @@ void AnalysisControl::inputControlData(){
 #ifdef _DEBUG_WRITE
 		std::cout << "strEnv " << strEnv.str() << std::endl;// For debug
 #endif
-		char* ptr_env = new char[(strEnv.str()).length() + 1];
-    	std::strcpy(ptr_env,(strEnv.str()).c_str());
-		if( putenv(ptr_env ) != 0 ){
+		if( putenv(strEnv.str().c_str())) != 0 ){
 			OutputFiles::m_logFile << "Error : Environment variable MKL_PARDISO_OOC_MAX_CORE_SIZE was not set correctly ! " << std::endl;
 			exit(1);			
 		}
