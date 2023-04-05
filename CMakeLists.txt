@@ -15,6 +15,7 @@ message("Generator: ${CMAKE_GENERATOR}")
 message("C++ compiler: ${CMAKE_CXX_COMPILER}")
 message("C compiler: ${CMAKE_C_COMPILER}")
 
+# project(femtic)
 project(femtic LANGUAGES CXX)
 project(femtic
     DESCRIPTION "FEMTIC is a 3-D magnetotelluric inversion code. FEMTIC is made by object-oriented programming with C++. FEMTIC is applicable to land magnetotelluric survey data as well as ocean bottom magnetotelluric survey data."
@@ -32,7 +33,14 @@ message("Project_Source_Dir: ${PROJECT_SOURCE_DIR}")
 message("Project_Binary_Dir: ${PROJECT_BINARY_DIR}")
 message("CMAKE_Current_Ssource_Dir: ${CMAKE_CURRENT_SOURCE_DIR}")
 message("CMAKE_Current_Binary_Dir: ${CMAKE_CURRENT_BINARY_DIR}")
+find_package(OpenMP REQUIRED)
+find_package(MPI REQUIRED)
+find_package(MKL REQUIRED)
+set(CMAKE_CXX_COMPILER mpiicpc)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -qopenmp -D_LINUX -DMKL_ILP64 -D_USE_OMP")
+message("compile_flags: ${CMAKE_CXX_FLAGS}")
+
 add_subdirectory(femtic_lib)
 add_subdirectory(femtic_main)
-set(CMAKE_COLOR_MAKEFILE on)
+
 
